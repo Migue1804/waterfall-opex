@@ -10,7 +10,15 @@ def main():
         
         # Pasos para el registro de OPEX
         st.markdown("### Pasos:")
-        st.markdown("- **Paso 1:** Ingresa el número de categorías de costos.")
+        st.markdown("- **Paso 1:** Ingresa el número de categorías de costos. Usa la siguiente tabla como ejemplo:")
+        st.sidebar.subheader("Ejemplo de Datos:")
+        example_data = {
+            "Categoría de Costos": ["Ejemplo 1", "Ejemplo 2", "Ejemplo 3", "Ejemplo 4", "Ejemplo 5"],
+            "Presupuesto (USD)": [10000, 15000, 12000, 18000, 20000],
+            "Costo Real (USD)": [9500, 16000, 13000, 17500, 19500]
+        }
+        example_df = pd.DataFrame(example_data)
+        st.sidebar.write(example_df)
         st.markdown("- **Paso 2:** Para cada categoría, ingresa el nombre, presupuesto y costo real.")
         st.markdown("- **Paso 3:** Observa el gráfico Waterfall que muestra la diferencia entre el presupuesto y el costo real por categoría.")
         st.markdown("- **Paso 4:** ¡Listo! Puedes ver los datos ingresados en la tabla debajo del gráfico.")
