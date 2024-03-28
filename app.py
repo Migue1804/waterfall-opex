@@ -13,7 +13,7 @@ def main():
         st.markdown("- **Paso 1:** Ingresa el número de categorías de costos. Usa la siguiente tabla como ejemplo:")
         st.sidebar.subheader("Ejemplo de Datos:")
         example_data = {
-            "Categoría de Costos": ["Ejemplo 1", "Ejemplo 2", "Ejemplo 3", "Ejemplo 4", "Ejemplo 5"],
+            "Categoría": ["Personal", "Mantenimiento", "Servicios", "Combustibles", "Otros"],
             "Presupuesto (USD)": [10000, 15000, 12000, 18000, 20000],
             "Costo Real (USD)": [9500, 16000, 13000, 17500, 19500]
         }
