@@ -3,6 +3,22 @@ import plotly.graph_objects as go
 import pandas as pd
 
 def main():
+    with st.sidebar: 
+        st.title("Instrucciones")
+        st.write("¡Bienvenido a la aplicación de análisis de OPEX!")
+        st.markdown("Por favor sigue las instrucciones paso a paso para utilizar la herramienta correctamente.")
+        
+        # Pasos para el registro de OPEX
+        st.markdown("### Pasos:")
+        st.markdown("- **Paso 1:** Ingresa el número de categorías de costos.")
+        st.markdown("- **Paso 2:** Para cada categoría, ingresa el nombre, presupuesto y costo real.")
+        st.markdown("- **Paso 3:** Observa el gráfico Waterfall que muestra la diferencia entre el presupuesto y el costo real por categoría.")
+        st.markdown("- **Paso 4:** ¡Listo! Puedes ver los datos ingresados en la tabla debajo del gráfico.")
+        
+        # Información adicional
+        st.markdown("### Información Adicional:")
+        st.markdown("👉 **Para más información: https://www.linkedin.com/in/josemaguilar/**")
+
     st.image("Waterfall.jpg", width=720) 
     st.sidebar.header("Registro de OPEX")
 
